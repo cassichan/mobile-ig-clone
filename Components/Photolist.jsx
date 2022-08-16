@@ -13,8 +13,6 @@ const fakePhotos = [
 ];
 
 export default function Photolist() {
-  {
-  }
   return (
     <>
       <ScrollView style={styles.photoList}>
