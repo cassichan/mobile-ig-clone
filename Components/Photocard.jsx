@@ -1,6 +1,6 @@
 import React from "react";
-import { View, Image, Text } from "react-native";
-import { Avatar, Icon } from "react-native-elements";
+import { View, Image, Text, ActivityIndicator } from "react-native";
+import { Avatar, Card, Icon } from "react-native-elements";
 // import {Avatar, Icon} from "@rneui/themed"
 import { photoCardStyles } from "../assets/styles";
 
@@ -28,11 +28,12 @@ export default function Photocard({ photo }) {
         </View>
         <Icon name="code" />
       </View>
-      <Image source={{ uri: BASE_URL + 1 }} style={photoCardStyles.cardImage} />
+      <Image source={{ uri: BASE_URL + 1 }} style={photoCardStyles.cardImage} PlaceholderContent={<ActivityIndicator/>}/>
       <Text style={photoCardStyles.cardText}>
         The idea with React Native Elements is more about component structure
         than actual design.
       </Text>
+      <Card.Divider />
     </View>
   );
 }
