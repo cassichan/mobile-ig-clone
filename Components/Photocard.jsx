@@ -1,10 +1,9 @@
 import React from "react";
 import { View, Image, Text, ActivityIndicator } from "react-native";
 import { Avatar, Card, Icon } from "react-native-elements";
-// import {Avatar, Icon} from "@rneui/themed"
 import { photoCardStyles } from "../assets/styles";
 
-//Card will take one prop - photo card and we will map through to create photo list
+//Card will take one prop - photo. we will map through to create photo list
 export default function Photocard({ photo }) {
   const BASE_URL = "https://source.unsplash.com/random?cats=";
 

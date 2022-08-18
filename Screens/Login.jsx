@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import { Input, Button } from "react-native-elements";
 import { loginStyles } from "../assets/styles";
 export default function Login() {
